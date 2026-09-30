@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX, FiLock, FiMail, FiArrowRight } from "react-icons/fi";
 import { SITE } from "../data/site.js";
+import logo from "../assests/Logo.jpeg";
 
 const NAV = [
   ["/services", "Services"],
@@ -31,8 +32,7 @@ export default function Layout({ children }) {
       <header className={"site-header" + (scrolled ? " scrolled" : "")}>
         <div className="container header-inner">
           <Link to="/" className="logo">
-            <span className="logo-mark">I</span>
-            <span>Inkwell <em>Editorial</em></span>
+<img src={logo} alt="Inkwell Editorial" className="logo-image" />            <span>Inkwell <em>Editorial</em></span>
           </Link>
           <nav className={"nav" + (open ? " open" : "")}>
             {NAV.map(([to, label]) => (
@@ -55,8 +55,7 @@ export default function Layout({ children }) {
           <div className="footer-grid">
             <div>
               <Link to="/" className="logo">
-                <span className="logo-mark light">I</span>
-                <span>Inkwell <em>Editorial</em></span>
+<img src={logo} alt="Inkwell Editorial" className="logo-image" />                <span>Inkwell <em>Editorial</em></span>
               </Link>
               <p className="footer-blurb">{SITE.tagline}. Developmental editing, line editing, copy editing, proofreading and ebook formatting — with your voice kept intact.</p>
               <a className="footer-mail" href={"mailto:" + SITE.email}><FiMail /> {SITE.email}</a>
