@@ -14,7 +14,7 @@ export function estimate(s, w) {
 }
 
 const FACTORS = [
-  { icon: "file", title: "Manuscript condition", text: "A clean, self-revised draft takes less time per page than an early draft. The sample shows me which you have." },
+  { icon: "file", title: "Manuscript condition", text: "A clean, self revised draft takes less time per page than an early draft. The sample shows me which you have." },
   { icon: "book", title: "Genre", text: "Invented worlds, technical detail or historical accuracy require more checking and a more detailed style sheet." },
   { icon: "layers", title: "Editing depth", text: "Developmental, line, copy and proofreading involve very different amounts of work per word." },
   { icon: "edit", title: "Word count", text: "The main driver. Editing is priced per word, so the quote scales fairly with your book." },
@@ -54,8 +54,8 @@ export default function Pricing() {
             <h2>Fair for short books. <em>Fair for long ones.</em></h2>
           </div>
           <div>
-            <p className="lead-sm">Per-word pricing is the most transparent way to price editing, because the work grows with the length of the book.</p>
-            <p>An hourly rate makes it hard to know what you'll pay until the edit is done. A flat “package” price often hides assumptions about length. A per-word rate lets you calculate an estimate before we've even spoken — and compare quotes fairly.</p>
+            <p className="lead-sm">Per word pricing is the most transparent way to price editing, because the work grows with the length of the book.</p>
+            <p>An hourly rate makes it hard to know what you'll pay until the edit is done. A flat “package” price often hides assumptions about length. A per word rate lets you calculate an estimate before we've even spoken   and compare quotes fairly.</p>
             <p>Ebook formatting is different: the work depends more on structure than on words, so it's priced as a flat fee based on manuscript length.</p>
             <p className="note mt-3"><FiInfo /> Starting prices are estimates. A final quote is provided after reviewing your sample.</p>
           </div>
@@ -136,7 +136,7 @@ export default function Pricing() {
           <div className="worked mt-6">
             <div>
               <p className="eyebrow">Worked example</p>
-              <h3>A 75,000-word contemporary romance needing a line edit, a proofread and ebook formatting.</h3>
+              <h3>A 75,000 word contemporary romance needing a line edit, a proofread and ebook formatting.</h3>
             </div>
             <ul className="calc-lines">
               {example.map((e) => (
@@ -173,7 +173,7 @@ export default function Pricing() {
           </div>
           <div>
             <ul className="check-list big-list">
-              <li><FiCheck />A fixed quote — the price you're quoted is the price you pay.</li>
+              <li><FiCheck />A fixed quote   the price you're quoted is the price you pay.</li>
               <li><FiCheck />A 50% deposit reserves your editing slot; the balance is due on delivery.</li>
               <li><FiCheck />Projects under $300 are paid in full at booking.</li>
               <li><FiCheck />Payment plans are available for projects over $1,500.</li>
@@ -188,7 +188,7 @@ export default function Pricing() {
         <div className="container narrow center">
           <p className="eyebrow">Not sure which service you need?</p>
           <h2>Send a sample. <em>Get a recommendation.</em></h2>
-          <p className="mt-2">You don't need to diagnose your manuscript yourself. Send up to 1,000 words and I'll edit them for free, explain what I found, and recommend the level of edit your book needs — with a fixed quote. Sometimes the answer is a lighter service than you expected.</p>
+          <p className="mt-2">You don't need to diagnose your manuscript yourself. Send up to 1,000 words and I'll edit them for free, explain what I found, and recommend the level of edit your book needs   with a fixed quote. Sometimes the answer is a lighter service than you expected.</p>
           <div className="btn-row center"><Link className="btn btn-primary" to="/contact">Request a Free Sample Edit <FiArrowRight /></Link></div>
         </div>
       </section>

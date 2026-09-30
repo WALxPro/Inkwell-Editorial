@@ -81,7 +81,7 @@ export function Accordion({ items, startOpen = 0 }) {
 
 export function CTA({
   title = "Ready to see what your manuscript could become?",
-  text = "Send me the first 1,000 words. I'll edit them free of charge, explain every change, and recommend the level of edit your book actually needs — no obligation, no sales pitch."
+  text = "Send me the first 1,000 words. I'll edit them free of charge, explain every change, and recommend the level of edit your book actually needs   no obligation, no sales pitch."
 }) {
   return (
     <section className="cta-band">
@@ -95,6 +95,14 @@ export function CTA({
         </div>
       </div>
     </section>
+  );
+}
+
+export function CoverImage({ p }) {
+  return (
+    <div className="cover">
+      <img src={p.image} alt={p.title} />
+    </div>
   );
 }
 

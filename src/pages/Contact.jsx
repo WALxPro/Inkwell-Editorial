@@ -22,14 +22,14 @@ export default function Contact() {
       <PageHero
         eyebrow="Free sample edit"
         title={<>Send 1,000 words. <em>See the difference.</em></>}
-        lead="You'll receive your sample back edited in Track Changes, with comments explaining the changes, a recommended service and a fixed quote — usually within three business days."
+        lead="You'll receive your sample back edited in Track Changes, with comments explaining the changes, a recommended service and a fixed quote   usually within three business days."
       />
       <section>
         <div className="container contact-grid">
           {sent ? (
             <div className="sent">
               <FiCheckCircle size={40} />
-              <h2>Thank you — your sample is on its way.</h2>
+              <h2>Thank you   your sample is on its way.</h2>
               <p>You'll hear back within three business days with your edited sample, a recommendation and a quote. If you don't see a reply, check your spam folder or write to {SITE.email}.</p>
             </div>
           ) : (
@@ -47,7 +47,7 @@ export default function Contact() {
                 <div className="field">
                   <label htmlFor="s">Service you're interested in</label>
                   <select id="s" defaultValue="unsure">
-                    <option value="unsure">I'm not sure — please recommend</option>
+                    <option value="unsure">I'm not sure   please recommend</option>
                     {SERVICES.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
                   </select>
                 </div>
@@ -68,7 +68,7 @@ export default function Contact() {
             <div className="side-box">
               <h4>Tips for your sample</h4>
               <ul>
-                <li>Send your opening pages — they matter most to readers.</li>
+                <li>Send your opening pages   they matter most to readers.</li>
                 <li>Send the manuscript as it is now, without last-minute polishing.</li>
                 <li>Mention any intentional style choices.</li>
               </ul>

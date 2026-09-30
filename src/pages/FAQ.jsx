@@ -11,7 +11,7 @@ export default function FAQ() {
       <PageHero
         eyebrow="FAQ"
         title={<>Questions authors ask <em>before booking.</em></>}
-        lead="Straight answers about services, pricing, timelines, ebook files and confidentiality. If your question isn't here, send it with your sample — I'm happy to answer."
+        lead="Straight answers about services, pricing, timelines, ebook files and confidentiality. If your question isn't here, send it with your sample   I'm happy to answer."
       />
       <section>
         <div className="container">

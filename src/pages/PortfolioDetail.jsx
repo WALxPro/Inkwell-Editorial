@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { FiArrowLeft, FiArrowRight, FiFileText } from "react-icons/fi";
-import { Cover, CTA } from "../components/UI.jsx";
+import { Cover, CoverImage, CTA } from "../components/UI.jsx";
 import { PROJECTS } from "../data/portfolio.js";
 
 export default function PortfolioDetail() {
@@ -29,12 +29,13 @@ export default function PortfolioDetail() {
             <p className="lead">{p.summary}</p>
             <div className="proj-facts wide">
               <div className="fact"><span>Genre</span><strong>{p.genre}</strong></div>
-              <div className="fact"><span>Author type</span><strong>{p.authorType}</strong></div>
+              <div className="fact"><span>Author</span><strong>{p.author}</strong></div>
               <div className="fact"><span>Length</span><strong>{p.words} words</strong></div>
               <div className="fact"><span>Timeline</span><strong>{p.timeline}</strong></div>
             </div>
           </div>
-          <Cover p={p} />
+            {p.image ? <CoverImage p={p} /> : <Cover p={p} />}
+          
         </div>
       </section>
 

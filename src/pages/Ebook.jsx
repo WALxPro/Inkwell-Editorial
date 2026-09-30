@@ -4,14 +4,14 @@ import { PageHero, SectionHead, CTA } from "../components/UI.jsx";
 
 const ELEMENTS = [
   ["Chapter titles", "Consistent heading styles for every chapter, linked to navigation so readers can jump straight to them."],
-  ["Scene breaks", "A centred ornament or blank-line break that survives every screen size — no more drifting asterisks."],
-  ["Paragraph spacing", "First-line indents with no gaps, or block paragraphs — applied consistently, never with tabs or spaces."],
+  ["Scene breaks", "A centred ornament or blank-line break that survives every screen size   no more drifting asterisks."],
+  ["Paragraph spacing", "First-line indents with no gaps, or block paragraphs   applied consistently, never with tabs or spaces."],
   ["Italics", "Thoughts, letters, emphasis and foreign words converted to true italic styling that readers' fonts respect."],
-  ["Bold text", "Used sparingly and consistently — for text messages, signs or headings — never as manual formatting."],
+  ["Bold text", "Used sparingly and consistently   for text messages, signs or headings   never as manual formatting."],
   ["Special characters", "Em dashes, ellipses, curly quotes, accented names and symbols that display correctly on every device."],
-  ["Table of contents", "A generated, linked table of contents at the front of the book — never typed by hand."],
+  ["Table of contents", "A generated, linked table of contents at the front of the book   never typed by hand."],
   ["Clickable navigation", "The device-level menu that lets readers jump between chapters from anywhere in the book."],
-  ["Front matter", "Title page, copyright page, dedication, epigraph and content notes — in the right order."],
+  ["Front matter", "Title page, copyright page, dedication, epigraph and content notes   in the right order."],
   ["Back matter", "Also-by page, newsletter sign-up, next-book preview and links to your website or series."],
   ["Author bio", "A short, styled About the Author page, with an optional photo and links."],
   ["Acknowledgments", "Placed in the back matter so readers reach chapter one faster in the sample."],
@@ -30,7 +30,7 @@ export default function Ebook() {
       <PageHero
         eyebrow="Ebook formatting"
         title={<>A professional ebook, <em>on every screen.</em></>}
-        lead="Your readers will choose their own font, size and screen. Ebook formatting makes sure your book looks deliberate and professional whatever they choose — on Kindle, Apple Books, Kobo, Nook and phone reading apps."
+        lead="Your readers will choose their own font, size and screen. Ebook formatting makes sure your book looks deliberate and professional whatever they choose   on Kindle, Apple Books, Kobo, Nook and phone reading apps."
       >
         <div className="btn-row">
           <Link className="btn btn-primary" to="/contact">Get a formatting quote <FiArrowRight /></Link>
@@ -88,7 +88,7 @@ export default function Ebook() {
       {/* WHAT'S INCLUDED */}
       <section>
         <div className="container">
-          <SectionHead eyebrow="What ebook formatting includes" title={<>Thirteen details readers <em>notice</em> — even if they can't name them.</>} />
+          <SectionHead eyebrow="What ebook formatting includes" title={<>Thirteen details readers <em>notice</em>   even if they can't name them.</>} />
           <div className="elements">
             {ELEMENTS.map(([t, d], i) => (
               <div className="element" key={t}>
@@ -126,9 +126,9 @@ export default function Ebook() {
             <h2>One well-built file. <em>Every major store.</em></h2>
           </div>
           <div>
-            <p className="lead-sm">EPUB is the standard ebook format — think of it as a small, carefully organised website packaged into a single file.</p>
+            <p className="lead-sm">EPUB is the standard ebook format   think of it as a small, carefully organised website packaged into a single file.</p>
             <p>Apple Books, Kobo, Barnes & Noble, Google Play and distributors like Draft2Digital all use EPUB. Amazon KDP accepts EPUB uploads too, and converts them for Kindle devices and apps. That means one clean, validated EPUB can serve every retailer.</p>
-            <p>Unlike a PDF, an ebook has no fixed pages. The text reflows when readers change the font size or turn their phone sideways. That's why formatting must be built with styles rather than spaces, tabs and page breaks — and why a document that looks perfect in Word can fall apart on a Kindle.</p>
+            <p>Unlike a PDF, an ebook has no fixed pages. The text reflows when readers change the font size or turn their phone sideways. That's why formatting must be built with styles rather than spaces, tabs and page breaks   and why a document that looks perfect in Word can fall apart on a Kindle.</p>
             <p>Before delivery, every file is validated and checked in Kindle and EPUB previewers at different screen sizes.</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function Ebook() {
               </div>
             ))}
           </div>
-          <p className="note mt-4">Formatting works best on a final, proofread manuscript. Text changes after formatting are possible, but each round slows publication — the Complete Ebook Package includes a proofread of the formatted file for exactly this reason.</p>
+          <p className="note mt-4">Formatting works best on a final, proofread manuscript. Text changes after formatting are possible, but each round slows publication   the Complete Ebook Package includes a proofread of the formatted file for exactly this reason.</p>
         </div>
       </section>
 

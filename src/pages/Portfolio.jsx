@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import { PageHero, Cover, CTA } from "../components/UI.jsx";
+import { PageHero, Cover, CTA, CoverImage } from "../components/UI.jsx";
 import { PROJECTS, FILTERS } from "../data/portfolio.js";
 
 export default function Portfolio() {
@@ -13,7 +13,7 @@ export default function Portfolio() {
       <PageHero
         eyebrow="Portfolio · Sample case studies"
         title={<>Books, problems, <em>and how they were solved.</em></>}
-        lead="Each project shows the author's challenge, the editorial approach, the result and a short before-and-after excerpt. Open any project for the full case study."
+        lead="Each project shows the author's challenge, the editorial approach, the result and a short before and after excerpt. Open any project for the full case study."
       />
 
       <section className="portfolio-section">
@@ -29,14 +29,16 @@ export default function Portfolio() {
 
           {list.map((p) => (
             <article className="proj" key={p.id}>
-              <Link to={"/portfolio/" + p.id}><Cover p={p} /></Link>
+         <Link to={"/portfolio/" + p.id}>
+  {p.image ? <CoverImage p={p} /> : <Cover p={p} />}
+</Link>
               <div>
                 <p className="eyebrow">{p.service}</p>
                 <h2 className="proj-title"><Link to={"/portfolio/" + p.id}>{p.title}</Link></h2>
                 <p className="lead-sm">{p.summary}</p>
                 <div className="proj-facts">
                   <div className="fact"><span>Genre</span><strong>{p.genre}</strong></div>
-                  <div className="fact"><span>Author</span><strong>{p.authorType}</strong></div>
+                  <div className="fact"><span>Author</span><strong>{p.author}</strong></div>
                   <div className="fact"><span>Length</span><strong>{p.words} words</strong></div>
                 </div>
                 <div className="proj-cols">

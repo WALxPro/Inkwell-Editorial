@@ -14,7 +14,7 @@ export default function Editing() {
       <PageHero
         eyebrow="The Edit"
         title={<>See the edit, <em>not just the promise.</em></>}
-        lead="Anyone can say they'll make your writing better. This page shows exactly what that means — the original passage, what I noticed, every tracked change, the reasoning behind it, and the polished result."
+        lead="Anyone can say they'll make your writing better. This page shows exactly what that means   the original passage, what I noticed, every tracked change, the reasoning behind it, and the polished result."
       />
 
       <section className="section-alt">
@@ -24,7 +24,7 @@ export default function Editing() {
             <h2>Because editing is <em>invisible</em> when it's done well.</h2>
           </div>
           <div>
-            <p>A finished, well-edited book doesn't look edited — it just reads smoothly. That makes it hard for authors to judge what an editor actually does. So instead of describing the work, this page shows it, stage by stage, exactly as you'd see it in your own manuscript.</p>
+            <p>A finished, well-edited book doesn't look edited   it just reads smoothly. That makes it hard for authors to judge what an editor actually does. So instead of describing the work, this page shows it, stage by stage, exactly as you'd see it in your own manuscript.</p>
             <p>Each case study focuses on one common problem: wordiness, repetition, weak verbs, dialogue, description, pacing, grammar, continuity and ebook formatting. Read them in order, or jump to the problem you recognise in your own writing.</p>
             <p className="note mt-3"><FiInfo /> To protect client confidentiality, the passages on this page were written for demonstration. Real client work is only ever shown with written permission.</p>
           </div>
@@ -34,9 +34,9 @@ export default function Editing() {
       <section className="legend-section">
         <div className="container">
           <div className="legend">
-            <span><del className="mk-del">Deleted text</del> — removed</span>
-            <span><ins className="mk-ins">Inserted text</ins> — added</span>
-            <span className="legend-q">Author query — a question, not a change</span>
+            <span><del className="mk-del">Deleted text</del>   removed</span>
+            <span><ins className="mk-ins">Inserted text</ins>   added</span>
+            <span className="legend-q">Author query   a question, not a change</span>
           </div>
           <div className="case-index mt-4">
             {CASES.map((c, i) => (
@@ -103,7 +103,7 @@ export default function Editing() {
             center
             eyebrow="Your turn"
             title={<>Want to see this done to <em>your</em> writing?</>}
-            lead="The free sample edit uses exactly this approach on your first 1,000 words — tracked changes, margin comments and an explanation of the patterns I found."
+            lead="The free sample edit uses exactly this approach on your first 1,000 words   tracked changes, margin comments and an explanation of the patterns I found."
           />
           <div className="btn-row center">
             <Link className="btn btn-primary" to="/contact">Request a Free Sample Edit <FiArrowRight /></Link>

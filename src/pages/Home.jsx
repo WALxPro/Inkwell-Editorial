@@ -18,7 +18,7 @@ export default function Home() {
           <div className="fade">
             <p className="eyebrow">Manuscript editing · Ebook formatting</p>
             <h1>Your story, <em>clearer.</em><br />Your voice, <em>intact.</em></h1>
-            <p className="lead">Inkwell Editorial is an independent editorial studio helping debut, indie and self-published authors turn finished drafts into polished, publication-ready books — from big-picture story feedback to the final EPUB file.</p>
+            <p className="lead">Inkwell Editorial is an independent editorial studio helping debut, indie and self-published authors turn finished drafts into polished, publication-ready books   from big-picture story feedback to the final EPUB file.</p>
             <div className="btn-row">
               <Link className="btn btn-primary" to="/contact">Request a Free Sample Edit <FiArrowRight /></Link>
               <Link className="btn btn-ghost" to="/editing">See real edits</Link>
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="paper">
             <span className="paper-label">{hero.title} · {hero.service}</span>
             <p className="excerpt"><Markup text={hero.markup} /></p>
-            <div className="margin-note"><strong>Editor's note — </strong>Filler cut, the discovery moved forward, and the sentence split in two. Nothing of the author's meaning was lost.</div>
+            <div className="margin-note"><strong>Editor's note   </strong>Filler cut, the discovery moved forward, and the sentence split in two. Nothing of the author's meaning was lost.</div>
           </div>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
             <h2>An editorial studio built for <em>independent</em> authors.</h2>
           </div>
           <div>
-            <p className="lead-sm">Traditionally published authors have an entire editorial team behind them. Independent authors deserve the same care — without losing control of their book.</p>
+            <p className="lead-sm">Traditionally published authors have an entire editorial team behind them. Independent authors deserve the same care   without losing control of their book.</p>
             <p>Inkwell Editorial offers every stage of professional editing, from developmental feedback on structure and character to line editing, copy editing and a final proofread, plus ebook formatting that makes your book look at home on any Kindle, phone or tablet.</p>
             <p>Every edit is done in Track Changes, every significant decision is explained, and every manuscript is treated as confidential. You stay the author. I help the book become the version you imagined.</p>
             <Link className="text-link" to="/about">More about the editor <FiArrowRight /></Link>
@@ -59,7 +59,7 @@ export default function Home() {
           <SectionHead
             eyebrow="What I can help with"
             title={<>Something about your manuscript <em>isn't quite right.</em></>}
-            lead="Most authors arrive with a feeling rather than a diagnosis. These are the problems I hear about most often — and every one of them is fixable."
+            lead="Most authors arrive with a feeling rather than a diagnosis. These are the problems I hear about most often   and every one of them is fixable."
           />
           <div className="grid-4">
             {NEEDS.map((n) => (
@@ -93,7 +93,7 @@ export default function Home() {
             <Link to="/contact" className="card svc-card svc-card-dark">
               <span className="icon-wrap"><Icon name="help" /></span>
               <h3>Not sure yet?</h3>
-              <p>Send a free sample and I'll recommend the right service — honestly.</p>
+              <p>Send a free sample and I'll recommend the right service   honestly.</p>
               <div className="svc-card-foot"><span>Free</span><FiArrowRight /></div>
             </Link>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
           <SectionHead
             eyebrow="Which editing service do you need?"
             title={<>Different problems need <em>different edits.</em></>}
-            lead="Buying the wrong level of edit is the most common — and most expensive — mistake authors make. Here's how the stages compare."
+            lead="Buying the wrong level of edit is the most common   and most expensive   mistake authors make. Here's how the stages compare."
           />
           <div className="compare">
             {COMPARE.map((c) => (
@@ -132,7 +132,7 @@ export default function Home() {
           <SectionHead
             eyebrow="Before & after"
             title={<>See the edit, <em>not just the promise.</em></>}
-            lead={preview.title + " · " + preview.genre + " · " + preview.service + ". An action scene rebuilt around strong verbs — with every change visible."}
+            lead={preview.title + " · " + preview.genre + " · " + preview.service + ". An action scene rebuilt around strong verbs   with every change visible."}
           />
           <div className="ba">
             <div className="ba-panel"><h5>The original</h5><p className="excerpt">{preview.original}</p></div>
@@ -149,7 +149,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">Why professional editing matters</p>
             <h2>A good story can still <em>lose its readers.</em></h2>
-            <p className="mt-2">Readers rarely put a book down because of one big problem. They put it down because of a slow accumulation of small ones — each moment of friction pulling them a little further out of the story.</p>
+            <p className="mt-2">Readers rarely put a book down because of one big problem. They put it down because of a slow accumulation of small ones   each moment of friction pulling them a little further out of the story.</p>
             <p className="pull mt-4">Editing improves the reading experience without taking ownership away from the author.</p>
           </div>
           <ol className="why-list">

@@ -12,12 +12,12 @@ export const CASES = [
     size: "92,000 words",
     challenge: "The author's worldbuilding was rich, but the prose was padded with filler phrases and stacked qualifiers. Key realisations were buried at the end of long sentences, so moments that should have landed with weight simply drifted past.",
     original: "At that particular moment in time, Kaela was actually beginning to slowly realize that the old road they had been walking along for the past several days was not, in fact, leading them in the direction of the coast at all, but was instead turning gradually further and further inland toward the mountains.",
-    noticed: "This single 55-word sentence contains one important discovery — the road is wrong — but it's diluted by filler (“at that particular moment in time,” “actually,” “in fact”), hedged verbs (“was beginning to slowly realize”) and a doubled phrase (“further and further”). The reader has to wade through the sentence to find the story.",
+    noticed: "This single 55-word sentence contains one important discovery   the road is wrong   but it's diluted by filler (“at that particular moment in time,” “actually,” “in fact”), hedged verbs (“was beginning to slowly realize”) and a doubled phrase (“further and further”). The reader has to wade through the sentence to find the story.",
     markup: "[-At that particular moment in time, -]Kaela [-was actually beginning to slowly realize that-]{+began to realize+} the old road [-they had been walking along for the past several days was not, in fact, leading them in the direction of-]{+wasn't leading them to+} the coast at all[-, but was instead turning gradually further and further inland toward the mountains.-]{+. For days it had been bending inland, toward the mountains.+}",
     note: "I cut filler phrases that carry no meaning, replaced the slow verb construction with a direct one, and split the sentence in two. The first sentence delivers the discovery; the second gives the evidence and the ominous direction. Every piece of the author's original information survives.",
     polished: "Kaela began to realize the old road wasn't leading them to the coast at all. For days it had been bending inland, toward the mountains.",
-    changed: ["Reduced from 55 words to 25 without losing information", "Removed filler: “at that particular moment in time,” “actually,” “in fact”", "Replaced “was beginning to slowly realize” with “began to realize”", "Split one overloaded sentence into two with clear jobs", "Ended on “mountains” — the most ominous word — for emphasis"],
-    takeaway: "Filler phrases feel natural while drafting because they mimic speech. On the page they dilute your most important moments. Look for sentences where the key information arrives last — and move it forward."
+    changed: ["Reduced from 55 words to 25 without losing information", "Removed filler: “at that particular moment in time,” “actually,” “in fact”", "Replaced “was beginning to slowly realize” with “began to realize”", "Split one overloaded sentence into two with clear jobs", "Ended on “mountains”   the most ominous word   for emphasis"],
+    takeaway: "Filler phrases feel natural while drafting because they mimic speech. On the page they dilute your most important moments. Look for sentences where the key information arrives last   and move it forward."
   },
   {
     id: "repetition",
@@ -28,12 +28,12 @@ export const CASES = [
     size: "78,000 words",
     challenge: "The emotional core of this romance was strong, but the author leaned on the same verbs and physical reactions to show emotion. Across the manuscript, characters “looked” over 600 times and hearts “pounded” in nearly every chapter.",
     original: "Maya looked at the letter. She looked at the handwriting, the careful loops she had once known so well, and she felt her heart pound. She looked out the window at the grey sea and felt her heart pound again as she thought about the last time she had seen him.",
-    noticed: "Three “looked” and two “felt her heart pound” in four sentences. The repetition flattens what should be a quietly devastating moment. “Felt her heart pound” is also a filter — it tells us about a sensation rather than letting the reader experience it.",
-    markup: "Maya [-looked at the letter. She looked at the handwriting, the-]{+stared at the letter—at the+} careful loops she had once known so well[-, and she felt her heart pound. She looked out the window at the grey sea and felt her heart pound again as she thought about the last time she had seen him.-]{+. Her heart pounded. Beyond the window the sea lay grey and flat, the same sea she'd been watching the last time she saw him.+}",
+    noticed: "Three “looked” and two “felt her heart pound” in four sentences. The repetition flattens what should be a quietly devastating moment. “Felt her heart pound” is also a filter   it tells us about a sensation rather than letting the reader experience it.",
+    markup: "Maya [-looked at the letter. She looked at the handwriting, the-]{+stared at the letter at the+} careful loops she had once known so well[-, and she felt her heart pound. She looked out the window at the grey sea and felt her heart pound again as she thought about the last time she had seen him.-]{+. Her heart pounded. Beyond the window the sea lay grey and flat, the same sea she'd been watching the last time she saw him.+}",
     note: "I merged the first two “looked” sentences with an em dash so the gaze moves naturally from the letter to the handwriting. The heart reaction appears once, stated directly. The final sentence connects the sea to the memory, so the setting carries the emotion instead of a repeated physical cue.",
-    polished: "Maya stared at the letter—at the careful loops she had once known so well. Her heart pounded. Beyond the window the sea lay grey and flat, the same sea she'd been watching the last time she saw him.",
+    polished: "Maya stared at the letter at the careful loops she had once known so well. Her heart pounded. Beyond the window the sea lay grey and flat, the same sea she'd been watching the last time she saw him.",
     changed: ["Three uses of “looked” reduced to one stronger verb (“stared”)", "Repeated “felt her heart pound” reduced to a single, direct “Her heart pounded”", "Removed the filter word “felt”", "Let the setting (the grey sea) carry the memory", "Added a manuscript-wide note on the author's top 12 repeated words"],
-    takeaway: "Every writer has default words. Run a frequency check on your manuscript before sending it to an editor — you'll find your personal crutch words in minutes."
+    takeaway: "Every writer has default words. Run a frequency check on your manuscript before sending it to an editor   you'll find your personal crutch words in minutes."
   },
   {
     id: "weak-verbs",
@@ -60,12 +60,12 @@ export const CASES = [
     size: "85,000 words",
     challenge: "The plotting in this detective mystery was clever, but the dialogue was formal and expository. Characters told each other things they both already knew, and adverb-heavy dialogue tags explained emotions the lines should have shown.",
     original: "“Hello, Detective Hale. It is very nice to see you again,” said Marcus smilingly. “I assume that you are here because of the murder of my business partner, which happened last night,” he explained.",
-    noticed: "Marcus explains the murder to the detective investigating it — a classic “as you know” info-dump. The stiff phrasing (“It is very nice”) doesn't match a suspect under pressure, and “smilingly” and “he explained” tell us what the dialogue should reveal on its own.",
+    noticed: "Marcus explains the murder to the detective investigating it   a classic “as you know” info-dump. The stiff phrasing (“It is very nice”) doesn't match a suspect under pressure, and “smilingly” and “he explained” tell us what the dialogue should reveal on its own.",
     markup: "“[-Hello, -]Detective Hale[-. It is very nice to see you again,-]{+.+}” [-said Marcus smilingly.-]{+Marcus smiled, but it didn't reach his eyes.+} “I assume [-that you are here because of the murder of my business partner, which happened last night,-]{+this is about Daniel.+}”[- he explained.-]",
-    note: "I trimmed the greeting to something clipped and wary, replaced the adverb tag with an action beat that hints at Marcus's guilt, and let him name the victim casually — which is more natural, and more suspicious. The reader already knows about the murder, so the dialogue no longer needs to explain it.",
+    note: "I trimmed the greeting to something clipped and wary, replaced the adverb tag with an action beat that hints at Marcus's guilt, and let him name the victim casually   which is more natural, and more suspicious. The reader already knows about the murder, so the dialogue no longer needs to explain it.",
     polished: "“Detective Hale.” Marcus smiled, but it didn't reach his eyes. “I assume this is about Daniel.”",
     changed: ["Removed the “as you know” exposition", "Replaced “said Marcus smilingly” with a revealing action beat", "Cut the redundant tag “he explained”", "Contracted, natural speech instead of formal phrasing", "Subtext: Marcus now sounds guarded, which serves the mystery"],
-    takeaway: "Read your dialogue aloud. If a character says something the listener already knows, it's for the reader — and readers can tell."
+    takeaway: "Read your dialogue aloud. If a character says something the listener already knows, it's for the reader   and readers can tell."
   },
   {
     id: "description",
@@ -74,12 +74,12 @@ export const CASES = [
     genre: "Literary Fiction",
     service: "Line Edit",
     size: "71,000 words",
-    challenge: "This literary novel relied on general adjectives — beautiful, lovely, big — at moments that needed specific, sensory detail. In literary fiction especially, precision in description is where voice lives.",
+    challenge: "This literary novel relied on general adjectives   beautiful, lovely, big   at moments that needed specific, sensory detail. In literary fiction especially, precision in description is where voice lives.",
     original: "The house was old and beautiful and very large, with lots of windows and a big garden that had many different kinds of flowers in it, and it was really very lovely in the evening light.",
     noticed: "The sentence tells the reader how to feel (“beautiful,” “lovely”) without giving them anything to see. Intensifiers (“very,” “really very,” “lots of,” “many different kinds”) add length but no image. Because I won't invent details that belong to the author, I tightened what was there and queried the rest.",
     markup: "The house was old [-and beautiful and very large, with lots of windows and a big garden that had many different kinds of flowers in it, and it was really very lovely in the evening light.-]{+and sprawling, its tall windows catching the evening light. Beyond them, the garden spilled over with flowers.+}",
     query: "Author query: Which flowers? Naming one or two (late roses, foxglove, hollyhocks?) would let readers see this particular garden rather than being told it's lovely. Your choice will also say something about who planted it.",
-    note: "I replaced the evaluative adjectives with images built from the author's own details: size became “sprawling,” windows became “tall windows catching the evening light,” and the garden now “spilled over.” For the flowers, I left a query rather than inventing specifics — those are the author's decisions to make.",
+    note: "I replaced the evaluative adjectives with images built from the author's own details: size became “sprawling,” windows became “tall windows catching the evening light,” and the garden now “spilled over.” For the flowers, I left a query rather than inventing specifics   those are the author's decisions to make.",
     polished: "The house was old and sprawling, its tall windows catching the evening light. Beyond them, the garden spilled over with flowers.",
     changed: ["Removed evaluative adjectives (“beautiful,” “lovely”)", "Removed intensifiers (“very,” “really,” “lots of”)", "Turned telling into images using the author's own details", "Left an author query instead of inventing new details", "Reduced from 39 words to 22"],
     takeaway: "“Beautiful” asks the reader to trust you. A specific detail lets them see it for themselves. When a description feels flat, replace one adjective with one concrete noun."
@@ -93,12 +93,12 @@ export const CASES = [
     size: "88,000 words",
     challenge: "The thriller's climax repeatedly stalled for backstory. At the most tense moments, the heroine drifted into childhood memories, releasing the tension the author had worked so hard to build.",
     original: "The bomb was going to go off in nine minutes. Lena remembered her childhood in Vienna, the way her father used to take her to the bakery on Sundays and buy her apricot pastries, and how the baker, a kind old man named Otto, always gave her an extra one. She wondered what had happened to Otto. She cut the red wire.",
-    noticed: "The memory itself is lovely and it matters to Lena's arc — but it arrives with a bomb counting down. The detour to Otto, a character who never reappears, breaks the scene's momentum entirely. The emotional link (her father) is the part worth keeping here.",
-    markup: "[-The bomb was going to go off in nine minutes.-]{+Nine minutes.+} Lena[- remembered her childhood in Vienna, the way her father used to take her to the bakery on Sundays and buy her apricot pastries, and how the baker, a kind old man named Otto, always gave her an extra one. She wondered what had happened to Otto.-]{+'s hands were steady—her father's hands, the ones that had once split apricot pastries with her on Sunday mornings in Vienna. She pushed the memory down and+} [-She cut-]{+cut+} the red wire.",
+    noticed: "The memory itself is lovely and it matters to Lena's arc   but it arrives with a bomb counting down. The detour to Otto, a character who never reappears, breaks the scene's momentum entirely. The emotional link (her father) is the part worth keeping here.",
+    markup: "[-The bomb was going to go off in nine minutes.-]{+Nine minutes.+} Lena[- remembered her childhood in Vienna, the way her father used to take her to the bakery on Sundays and buy her apricot pastries, and how the baker, a kind old man named Otto, always gave her an extra one. She wondered what had happened to Otto.-]{+'s hands were steady her father's hands, the ones that had once split apricot pastries with her on Sunday mornings in Vienna. She pushed the memory down and+} [-She cut-]{+cut+} the red wire.",
     note: "Rather than cutting the memory, I compressed it into a single image tied to the action (her steady hands), which keeps the emotional beat without stopping the clock. In the editorial letter I suggested moving the full bakery memory to the quiet chapter after the climax, where it can breathe.",
-    polished: "Nine minutes. Lena's hands were steady—her father's hands, the ones that had once split apricot pastries with her on Sunday mornings in Vienna. She pushed the memory down and cut the red wire.",
+    polished: "Nine minutes. Lena's hands were steady her father's hands, the ones that had once split apricot pastries with her on Sunday mornings in Vienna. She pushed the memory down and cut the red wire.",
     changed: ["Opened with a fragment for urgency: “Nine minutes.”", "Compressed a 50-word memory into one image tied to the action", "Removed a digression about a character who never reappears", "Kept the father connection that matters for Lena's arc", "Suggested relocating the full memory to a slower chapter"],
-    takeaway: "Backstory isn't the problem — timing is. The same memory can stall a climax or deepen a quiet chapter. Ask: does this scene have room to pause?"
+    takeaway: "Backstory isn't the problem   timing is. The same memory can stall a climax or deepen a quiet chapter. Ask: does this scene have room to pause?"
   },
   {
     id: "grammar",
@@ -107,11 +107,11 @@ export const CASES = [
     genre: "Cozy Mystery",
     service: "Copy Edit",
     size: "67,000 words",
-    challenge: "A charming cozy mystery with a strong voice — and the kinds of grammar errors that spell-check doesn't catch: homophones, pronoun case and subject–verb agreement.",
+    challenge: "A charming cozy mystery with a strong voice   and the kinds of grammar errors that spell-check doesn't catch: homophones, pronoun case and subject–verb agreement.",
     original: "Its been three weeks since Harriet's shop opened, and between you and I, sales have been slow. Neither her or her sister were willing to admit it but the bakery across the street, who's scones were famous, was stealing they're customers.",
     noticed: "Six errors in two sentences, none of which a spell-checker flags: “its” for “it's,” “between you and I,” “neither her or,” plural “were” after “neither… nor,” a missing comma before “but,” “who's” for “whose,” and “they're” for “their.”",
     markup: "[-Its-]{+It's+} been three weeks since Harriet's shop opened, and between you and [-I-]{+me+}, sales have been slow. Neither [-her or-]{+she nor+} her sister [-was-]{+was+} willing to admit it{+,+} but the bakery across the street, [-who's-]{+whose+} scones were famous, was stealing [-they're-]{+their+} customers.",
-    note: "These are narration, so standard grammar applies. If Harriet said “between you and I” in dialogue, I would leave it — characters are allowed to speak naturally. That distinction is recorded in the style sheet so it stays consistent throughout the book.",
+    note: "These are narration, so standard grammar applies. If Harriet said “between you and I” in dialogue, I would leave it   characters are allowed to speak naturally. That distinction is recorded in the style sheet so it stays consistent throughout the book.",
     polished: "It's been three weeks since Harriet's shop opened, and between you and me, sales have been slow. Neither she nor her sister was willing to admit it, but the bakery across the street, whose scones were famous, was stealing their customers.",
     changed: ["“Its” → “It's” (contraction of “it has”)", "“between you and I” → “between you and me” (object of a preposition)", "“Neither her or” → “Neither she nor” (subject case, correct pairing)", "“were” → “was” (singular subjects joined by “nor”)", "Comma added before “but” joining two independent clauses", "“who's” → “whose” and “they're” → “their”"],
     takeaway: "Spell-check confirms that words exist, not that they're the right words. Homophones and pronoun case need a human eye."
@@ -127,11 +127,11 @@ export const CASES = [
     original: "Seren pushed her red hair out of her eyes and drew the silver dagger her mother had left her. Three days' ride north, Castle Varn waited.",
     noticed: "The style sheet flagged three conflicts: Seren's hair is described as dark in chapters 2, 5 and 11; chapter 7 establishes that the dagger was her father's; and the map and chapter 3 place Castle Varn to the south. Continuity changes affect the author's world, so each correction was queried, not made silently.",
     markup: "Seren pushed her [-red-]{+dark+} hair out of her eyes and drew the silver dagger her [-mother-]{+father+} had left her. Three days' ride [-north-]{+south+}, Castle Varn waited.",
-    query: "Author queries: (1) Seren's hair is dark in chs. 2, 5 and 11 — changed to match; please confirm. (2) Ch. 7 says the dagger was her father's — changed to match; is this intentional misdirection? (3) Map and ch. 3 place Castle Varn south of here — changed; please confirm.",
-    note: "Each correction is backed by the style sheet, with chapter references, so the author can confirm in seconds. If the red hair were deliberate — a disguise, say — the author simply rejects the change. The author always has the final word on their world.",
+    query: "Author queries: (1) Seren's hair is dark in chs. 2, 5 and 11   changed to match; please confirm. (2) Ch. 7 says the dagger was her father's   changed to match; is this intentional misdirection? (3) Map and ch. 3 place Castle Varn south of here   changed; please confirm.",
+    note: "Each correction is backed by the style sheet, with chapter references, so the author can confirm in seconds. If the red hair were deliberate   a disguise, say   the author simply rejects the change. The author always has the final word on their world.",
     polished: "Seren pushed her dark hair out of her eyes and drew the silver dagger her father had left her. Three days' ride south, Castle Varn waited.",
     changed: ["Hair colour matched to the established description", "Heirloom origin matched to chapter 7", "Direction corrected to match the map", "Every change queried with chapter references", "Full character and place style sheet delivered with the edit"],
-    takeaway: "Long books and long drafting periods create drift. A style sheet — names, ages, eye colours, places, timeline — is the single best tool for keeping a series consistent."
+    takeaway: "Long books and long drafting periods create drift. A style sheet   names, ages, eye colours, places, timeline   is the single best tool for keeping a series consistent."
   },
   {
     id: "formatting",
@@ -143,7 +143,7 @@ export const CASES = [
     format: true,
     challenge: "The manuscript had been formatted by hand for years: tabs and spaces for indents, repeated returns to push chapters down the page, asterisks for scene breaks and markdown-style bold for letters. On an ebook reader, this produces uneven indents, blank screens and broken navigation.",
     original: "CHAPTER 1\n\n\n\n\tThe first time I saw Calloway it was raining , and I  hated it.\n\n\n*          *          *\n\n\tBy morning the sky had cleared. I wrote **Dear Nora** at the top of the page.",
-    noticed: "Manual tabs create inconsistent indents across devices. The four empty returns create blank screens on small readers. The spaced asterisks break apart on narrow screens. The **bold** markers would appear literally. There's also a stray space before a comma and a double space — both invisible in Word, visible in an ebook.",
+    noticed: "Manual tabs create inconsistent indents across devices. The four empty returns create blank screens on small readers. The spaced asterisks break apart on narrow screens. The **bold** markers would appear literally. There's also a stray space before a comma and a double space   both invisible in Word, visible in an ebook.",
     markup: "[-CHAPTER 1 ¶ ¶ ¶ ¶-]{+Chapter One  →  styled chapter heading, linked in the table of contents+}\n[-(tab)-]The first time I saw Calloway{+,+} it was raining[- ,-]{+,+} and I[-  -]{+ +}hated it.\n[-*          *          *-]{+❦  →  centred scene-break ornament+}\n[-(tab)-]By morning the sky had cleared. I wrote [-**Dear Nora**-]{+Dear Nora (in italics)+} at the top of the page.",
     note: "All manual formatting was removed and replaced with consistent styles: a heading style for chapters (which also builds the clickable table of contents), a first-paragraph style with no indent, a body style with a proper indent, and a scene-break style. The letter salutation became true italics. The file was then tested on Kindle and EPUB previewers.",
     polished: "Chapter One\n\nThe first time I saw Calloway, it was raining, and I hated it.\n\n❦\n\nBy morning the sky had cleared. I wrote Dear Nora at the top of the page.",

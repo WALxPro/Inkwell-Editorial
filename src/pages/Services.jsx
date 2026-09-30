@@ -14,7 +14,7 @@ export default function Services() {
       <PageHero
         eyebrow="Services"
         title={<>Seven services. One goal: <em>the best version of your book.</em></>}
-        lead="Each service below is explained in full — what it is, who needs it, when to book it, exactly what's included and what isn't, how long it takes and what you receive at the end."
+        lead="Each service below is explained in full   what it is, who needs it, when to book it, exactly what's included and what isn't, how long it takes and what you receive at the end."
       >
         <div className="jump">
           {SERVICES.map((s) => <button key={s.id} onClick={() => go(s.id)}>{s.name}</button>)}
@@ -26,7 +26,7 @@ export default function Services() {
           <article id={s.id} className="svc-detail" key={s.id}>
             <div className="svc-top">
               <div>
-                <span className="svc-num">{String(i + 1).padStart(2, "0")} — <Icon name={s.icon} size={16} /></span>
+                <span className="svc-num">{String(i + 1).padStart(2, "0")}   <Icon name={s.icon} size={16} /></span>
                 <h2>{s.name}</h2>
                 <p className="lead">{s.tagline}</p>
               </div>
@@ -75,7 +75,7 @@ export default function Services() {
       <section>
         <div className="container narrow center">
           <p className="eyebrow">Combining services</p>
-          <h2>Most books need <em>two or three</em> stages — rarely all of them.</h2>
+          <h2>Most books need <em>two or three</em> stages   rarely all of them.</h2>
           <p className="mt-2">A common path is a line edit followed by a proofread and ebook formatting. Strong self-editors often need only a copy edit and proofread. Your free sample edit comes with an honest recommendation so you only pay for what your manuscript needs.</p>
         </div>
       </section>

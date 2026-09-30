@@ -10,7 +10,7 @@ export default function Resources() {
       <PageHero
         eyebrow="Author resources"
         title={<>Practical guides for <em>independent authors.</em></>}
-        lead="Free, plain-language articles on editing, pricing, manuscript preparation and ebook formatting — the things I explain most often, written down once and properly."
+        lead="Free, plain-language articles on editing, pricing, manuscript preparation and ebook formatting   the things I explain most often, written down once and properly."
       />
 
       <section>
