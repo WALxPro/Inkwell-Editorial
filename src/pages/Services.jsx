@@ -14,7 +14,7 @@ export default function Services() {
       <PageHero
         eyebrow="Services"
         title={<>Seven services. One goal: <em>the best version of your book.</em></>}
-        lead="Each service below is explained in full   what it is, who needs it, when to book it, exactly what's included and what isn't, how long it takes and what you receive at the end."
+        lead="Each service below is explained in full what it is, who needs it, when to book it, exactly what's included and what isn't, how long it takes and what you receive at the end."
       >
         <div className="jump">
           {SERVICES.map((s) => <button key={s.id} onClick={() => go(s.id)}>{s.name}</button>)}

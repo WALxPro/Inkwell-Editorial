@@ -6,7 +6,7 @@ export const FILTERS = ["All", "Romance", "Fantasy", "Adventure" ,"Literary Fict
 
 export const PROJECTS = [
   {
-    id: "the-secret-of-larkin-lake",
+    id: "the secret of larkin lake",
     title: "The Secret of Larkin Lake",
     author: "Verona Evans",
     genre: "Children’s Adventure",
@@ -26,7 +26,7 @@ export const PROJECTS = [
     image: book1,
   },
   {
-    id: "the-fourth-man-in-the-fire",
+    id: "the fourth man in the fire",
     title: "The Fourth Man In the Fire",
     author: "Randall Levant",
     genre: "Memoir / Christian Inspirational",
@@ -46,7 +46,7 @@ export const PROJECTS = [
     image: book2,
   },
   {
-    id: "fifteen-books-the-art-of-time",
+    id: "fifteen books the art of time",
     title: "Fifteen Books & The Art of Time",
     author: "Capt. Kenneth J. Ezell",
     genre: "Memoir / Nautical",
@@ -66,7 +66,7 @@ export const PROJECTS = [
     image: book4,
   },
   {
-    id: "life-from-the-mountain",
+    id: "life from the mountain",
     title: "Life From the Mountain",
     author: "Janice Flowers",
     genre: "Christian Romance / Inspirational Fiction",
@@ -86,7 +86,7 @@ export const PROJECTS = [
     image: book3,
   },
     {
-    id: "a-familiar-life",
+    id: "a familiar life",
     title: "A Familiar Life",
     author: "Geoff Leanard Wiseman",
     genre: "YA Urban Fantasy / LGBTQ+ Coming of Age",
@@ -95,12 +95,12 @@ export const PROJECTS = [
     words: "32,000",
     filters: ["Fantasy", "Romance"],
     colors: ["#3d5a4c", "#1f2f3a"],
-    summary: "A late-nineties small town story about a seventeen year old who starts hearing a voice in his head, and the friends, family and magic that turn out to be tied to it. The premise and cast were strong, but long stretches of over explanation and repeated beats slowed the tension.",
+    summary: "A late nineties small town story about a seventeen year old who starts hearing a voice in his head, and the friends, family and magic that turn out to be tied to it. The premise and cast were strong, but long stretches of over explanation and repeated beats slowed the tension.",
     challenge: "Vivid characters and a distinctive setting (an Acadian town beside a Mi'kmaq reserve), but dialogue tags and stage business were heavy, internal thoughts were restated right after the action showed them, and tense slips, homophones and inconsistent italics for the voice's speech broke the reading flow at key reveals.",
     approach: "A line edit focused on trimming restated emotion, tightening action beats and dialogue tags, fixing tense and usage errors, and standardising how the inner voice, spells and French/Mi'kmaq phrases appear on the page. The author's humour, the 1999 details and the story's heart were left untouched.",
     result: "The manuscript was tightened by roughly 1,900 words with no scenes or plot points removed. Chapter openings and cliffhangers now land faster, the inner voice moments are easier to follow, and the teen voices read as more natural.",
     before: "The road to Bull's cabin was beautiful this time of year with the trees in the middle of changing colours. Vibrant yellows, oranges, reds and deep purples scattered across the treetops. The colours dancing in the rustling breeze as the light of the setting sun filtered through. All of it was wasted on Alex.",
-    after: "The road to Bull's cabin was beautiful this time of year, the trees caught mid-change in yellows, oranges, reds and deep purples, their leaves shifting as the setting sun filtered through. All of it was wasted on Alex.",
+    after: "The road to Bull's cabin was beautiful this time of year, the trees caught mid change in yellows, oranges, reds and deep purples, their leaves shifting as the setting sun filtered through. All of it was wasted on Alex.",
     timeline: "3 weeks",
     deliverables: ["Tracked manuscript", "Clean manuscript", "Style sheet (character names, places, spells, French and Mi'kmaq terms)", "Prose pattern summary letter"],
   },

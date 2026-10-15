@@ -47,7 +47,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:id" element={<PortfolioDetail />} />
           <Route path="/ebook-formatting" element={<Ebook />} />
-          <Route path="/resources" element={<Resources />} />
+          {/* <Route path="/resources" element={<Resources />} /> */}
           <Route path="/resources/:slug" element={<Article />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />

@@ -6,198 +6,252 @@ import {
 import { PageHero, SectionHead, CTA } from "../components/UI.jsx";
 import { SITE } from "../data/site.js";
 
-/* ---------- Page content ---------- */
-
 const PHILOSOPHY = [
   {
-    title: "Your voice comes first",
-    text: "Your voice is a set of choices: rhythm, vocabulary, what you notice and what you leave out. Before I change anything, I learn those choices. Deliberate fragments, unusual punctuation and dialect go into your style sheet and are protected, not corrected.",
+    title: "Your Voice Matters",
+    text: "Every author has a unique writing style. Our approach focuses on improving clarity and readability while preserving the author's original voice.",
   },
   {
-    title: "Every manuscript gets a full read",
-    text: "I read the whole book before I make a single change. Then I edit, build your style sheet as I go, and review my own changes before delivery. Nothing leaves the studio unchecked.",
+    title: "Quality Comes First",
+    text: "Every manuscript receives careful attention to consistency, structure, and detail to help authors prepare their work for publication.",
   },
   {
-    title: "Plain-language communication",
-    text: "No editorial jargon. You get a reply within one business day, a halfway update, and questions batched together so you aren't interrupted constantly. If a deadline is at risk, you hear early, never on the due date.",
+    title: "Clear Communication",
+    text: "Straightforward feedback, clear expectations, and helpful updates keep authors informed throughout the editing process.",
   },
 ];
 
 const PROCESS = [
   {
-    title: "Send a sample",
-    text: "Send the first 1,000 words through the contact form. It's free and there's no commitment.",
-    points: ["Tell me your genre and goals", "Share your target publish date"],
+    title: "Submit Your Sample",
+    text: "Share your manuscript details and project goals to get started.",
+    points: ["Tell us your genre and goals", "Share your target publish date"],
   },
   {
-    title: "Get a recommendation",
-    text: "Within three business days you receive a sample edit, an honest view of which service your book needs, and a fixed quote.",
-    points: ["Only the stages you need", "No surprise costs"],
+    title: "Get a Recommendation",
+    text: "Receive a suitable service recommendation and quotation for your manuscript.",
+    points: ["Choose the services you need", "Understand the cost upfront"],
   },
   {
-    title: "The edit",
-    text: "I read the full manuscript, edit it in tracked changes and keep a running style sheet. You get a halfway update.",
-    points: ["Comments explain the why", "Queries batched, not scattered"],
+    title: "Editing Begins",
+    text: "Your manuscript is reviewed and edited with care, consistency, and constructive feedback.",
+    points: ["Clear editorial comments", "Consistent editing approach"],
   },
   {
-    title: "Delivery and follow-up",
-    text: "You receive your files and a short summary of patterns worth watching in your writing. I answer follow-up questions after delivery.",
-    points: ["Tracked and clean copies", "Style sheet included"],
+    title: "Final Delivery",
+    text: "Receive your edited files and relevant documentation according to the agreed service.",
+    points: ["Organised project files", "Helpful editorial guidance"],
   },
 ];
 
 const NEVER = [
-  "Rewrite your book in my own voice.",
-  "Change your story, plot or characters without asking you first.",
-  "Share, quote or reuse your manuscript, including in my portfolio, without your written permission.",
+  "Rewrite your book to impose another writing style.",
+  "Change your story or characters without your approval.",
+  "Share your manuscript without written permission.",
   "Use your work to train AI tools.",
-  "Hand your manuscript to a subcontractor. Every edit is done by me.",
-  "Quote a price that changes after you've accepted.",
-  "Miss a deadline without telling you well in advance.",
+  "Hand your manuscript to an unauthorised subcontractor.",
+  "Change the agreed price without approval.",
+  "Leave you uninformed about significant deadline changes.",
 ];
 
 const EXPECT = [
-  { icon: FiMessageSquare, title: "Clear communication", text: "Replies within one business day and a halfway update on every project, in plain language." },
-  { icon: FiClock, title: "Honest timelines", text: "You'll get a realistic delivery date before you commit, and early warning if anything shifts." },
-  { icon: FiEdit3, title: "Edits that teach", text: "Comments explain the reasoning behind changes, so you improve as a writer with each book." },
-  { icon: FiFileText, title: "Clean, usable files", text: "Tracked and clean manuscripts, plus a style sheet you can hand to any future editor or proofreader." },
-  { icon: FiShield, title: "Real confidentiality", text: "Your manuscript is private from the moment it arrives. Nothing is shared or used without your say-so." },
-  { icon: FiSmartphone, title: "Ebook-ready finishing", text: "Formatting for Kindle, Apple Books, Kobo and other major retailers, so editing and publishing stay in one place." },
+  {
+    icon: FiMessageSquare,
+    title: "Clear Communication",
+    text: "Straightforward feedback and helpful project updates.",
+  },
+  {
+    icon: FiClock,
+    title: "Reliable Timelines",
+    text: "Clear delivery expectations and timely communication.",
+  },
+  {
+    icon: FiEdit3,
+    title: "Thoughtful Editing",
+    text: "Careful improvements that preserve your unique voice.",
+  },
+  {
+    icon: FiFileText,
+    title: "Professional Files",
+    text: "Organised deliverables tailored to your selected service.",
+  },
+  {
+    icon: FiShield,
+    title: "Confidentiality",
+    text: "Your manuscript is treated with care and discretion.",
+  },
+  {
+    icon: FiSmartphone,
+    title: "Ebook Formatting",
+    text: "Professional formatting for major ebook reading platforms.",
+  },
 ];
 
 const WHO = [
-  { icon: FiBookOpen, title: "First-time authors", text: "Finished a first draft and unsure what it needs? I'll tell you plainly and explain what to fix first." },
-  { icon: FiUsers, title: "Independent and self-publishing authors", text: "You run your own publishing process and want professional quality without a publisher's gatekeeping." },
-  { icon: FiEdit3, title: "Series and returning authors", text: "A consistent editor who knows your style sheet, your world and your recurring characters." },
+  {
+    icon: FiBookOpen,
+    title: "First-Time Authors",
+    text: "Get guidance on improving your first manuscript and preparing it for publication.",
+  },
+  {
+    icon: FiUsers,
+    title: "Independent Authors",
+    text: "Access professional editing while retaining creative control of your work.",
+  },
+  {
+    icon: FiEdit3,
+    title: "Returning Authors",
+    text: "Maintain consistency across multiple books, series, and recurring characters.",
+  },
 ];
 
 const GENRES = [
-  "Romance", "Fantasy", "Science fiction", "Mystery", "Thriller",
-  "Historical", "Literary", "Young adult", "Christian fiction", "LGBTQ+ fiction",
+  "Romance",
+  "Fantasy",
+  "Science Fiction",
+  "Mystery",
+  "Thriller",
+  "Historical",
+  "Literary",
+  "Young Adult",
+  "Christian Fiction",
+  "LGBTQ+ Fiction",
 ];
-
-/* ---------- Page ---------- */
 
 export default function About() {
   return (
     <>
       <PageHero
-        eyebrow="About"
-        title={<>An editor who believes the book <em>belongs to you.</em></>}
-        lead="Inkwell Editorial is a one-editor studio. The person who reads your sample is the person who edits your book, answers your emails and delivers your files."
+        eyebrow="About Us"
+        title={<>Helping authors bring their stories to <em>life.</em></>}
+        lead="Inkwell Editorial provides professional editing and ebook formatting services to help independent authors prepare their manuscripts for publication."
       />
 
-      {/* 1. The editor */}
+      {/* 1. About Inkwell */}
       <section>
-        <div className="container about-intro">
-          <div className="portrait">
-            <span>I</span>
-            <p className="small">Add your photo here</p>
+        <div className="container split">
+          <div>
+            <p className="eyebrow">Who We Are</p>
+            <h2>Professional editing with a <em>personal touch.</em></h2>
           </div>
           <div>
-            <p className="eyebrow">About the editor</p>
-            <h2>Hello, I'm {SITE.editor}.</h2>
-            <p className="lead-sm mt-2">
-              I edit fiction for independent authors: developmental feedback, line editing, copy editing, proofreading and ebook formatting.
+            <p className="lead-sm">
+              Inkwell Editorial helps independent authors refine their
+              manuscripts through professional editing and ebook formatting.
             </p>
             <p>
-              I've spent years inside other people's sentences, and the most important thing I've learned is that good editing is mostly restraint. The goal is never to make a book sound like its editor. It's to remove everything standing between the reader and the story the author meant to tell.
+              Our focus is on clarity, consistency, and preserving each
+              author's unique voice. Every project is approached with care
+              so authors can move forward with confidence.
             </p>
-            <p>
-              I work across romance, fantasy, science fiction, mystery, thriller, historical, literary and young adult fiction, and I format ebooks for Kindle, Apple Books, Kobo and every major retailer.
-            </p>
-            <p className="signature">{SITE.editor}, Founder & Editor</p>
+            {/* <p className="signature">
+              {SITE.editor}, Founder & Editor
+            </p> */}
           </div>
         </div>
       </section>
 
-      {/* 2. Why the studio exists */}
+      {/* 2. Why Inkwell Editorial */}
       <section className="section-alt">
         <div className="container split">
           <div>
-            <p className="eyebrow">Why Inkwell Editorial exists</p>
-            <h2>Independent authors deserve a <em>real editorial partner.</em></h2>
+            <p className="eyebrow">Our Purpose</p>
+            <h2>Every author deserves a <em>trusted partner.</em></h2>
           </div>
           <div>
             <p>
-              Self-publishing gives authors extraordinary freedom, and a long list of jobs that publishers used to do. Editing is the most important of them and often the hardest to buy with confidence. Prices are unclear, services have vague names, and it's difficult to know what you're getting until it's too late.
+              Publishing a book takes creativity, dedication, and attention
+              to detail. Finding the right editorial support should be simple.
             </p>
             <p>
-              Inkwell exists to make professional editing understandable: clear services, visible pricing, real examples of the work, and an edit that teaches you something about your own writing.
-            </p>
-            <p>
-              Because it's a one-editor studio, there are no handoffs and no account managers between you and the person working on your manuscript.
+              Inkwell Editorial offers clearly defined services and
+              personalised guidance to help authors improve their work
+              while keeping control of their creative vision.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 3. Philosophy */}
+      {/* 3. Editorial Philosophy */}
       <section>
         <div className="container">
           <SectionHead
-            eyebrow="Editorial philosophy"
-            title={<>What guides <em>every edit.</em></>}
+            eyebrow="Our Philosophy"
+            title={<>The principles behind <em>every edit.</em></>}
           />
           <div className="grid-3">
-            {PHILOSOPHY.map((p) => (
-              <div className="card" key={p.title}>
-                <h4>{p.title}</h4>
-                <p>{p.text}</p>
+            {PHILOSOPHY.map((item) => (
+              <div className="card" key={item.title}>
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 4. How a project runs: a true sequence, so numbered steps are appropriate */}
+      {/* 4. Our Process */}
       <section className="section-alt">
         <div className="container">
           <SectionHead
-            eyebrow="How it works"
-            title={<>From first sample to <em>finished book.</em></>}
+            eyebrow="How It Works"
+            title={<>From first sample to <em>finished manuscript.</em></>}
           />
           <div className="steps">
-            {PROCESS.map((s, i) => (
-              <div className="step" key={s.title}>
-                <span className="step-num">{i + 1}</span>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-                <ul>{s.points.map((p) => <li key={p}>{p}</li>)}</ul>
+            {PROCESS.map((step, index) => (
+              <div className="step" key={step.title}>
+                <span className="step-num">{index + 1}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+                <ul>
+                  {step.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
-          <Link className="text-link" to="/services">See all seven services <FiArrowRight /></Link>
+          <Link className="text-link" to="/services">
+            Explore Our Services <FiArrowRight />
+          </Link>
         </div>
       </section>
 
-      {/* 5. Promises */}
+      {/* 5. Our Commitments */}
       <section className="section-dark">
         <div className="container split">
           <div>
-            <p className="eyebrow">Promises</p>
-            <h2>Things I will <em>never</em> do.</h2>
+            <p className="eyebrow">Our Commitments</p>
+            <h2>Your story stays <em>yours.</em></h2>
             <p className="mt-2">
-              Trust matters more than anything in an editorial relationship. These are the lines I don't cross.
+              Trust, confidentiality, and respect for every author's
+              creative vision are central to our approach.
             </p>
           </div>
           <ul className="never-list">
-            {NEVER.map((n) => <li key={n}><FiX />{n}</li>)}
+            {NEVER.map((item) => (
+              <li key={item}>
+                <FiX />
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
-      {/* 6. What to expect */}
+      {/* 6. What to Expect */}
       <section>
         <div className="container">
           <SectionHead
-            eyebrow="Working together"
-            title={<>What you can <em>expect from me.</em></>}
+            eyebrow="The Inkwell Experience"
+            title={<>Professional support at <em>every stage.</em></>}
           />
           <div className="grid-3">
-            {EXPECT.map(({ icon: Ico, title, text }) => (
+            {EXPECT.map(({ icon: Icon, title, text }) => (
               <div className="card" key={title}>
-                <span className="icon-wrap"><Ico size={20} /></span>
+                <span className="icon-wrap">
+                  <Icon size={20} />
+                </span>
                 <h4>{title}</h4>
                 <p>{text}</p>
               </div>
@@ -206,26 +260,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* 7. Who and what */}
+      {/* 7. Authors and Genres */}
       <section className="section-alt">
         <div className="container">
           <SectionHead
-            eyebrow="Authors & genres"
-            title={<>Who I edit for, <em>and what.</em></>}
+            eyebrow="Authors & Genres"
+            title={<>Supporting every author's <em>journey.</em></>}
           />
           <div className="grid-3">
-            {WHO.map(({ icon: Ico, title, text }) => (
+            {WHO.map(({ icon: Icon, title, text }) => (
               <div className="mini" key={title}>
-                <Ico size={18} />
-                <div><strong>{title}</strong><p>{text}</p></div>
+                <Icon size={18} />
+                <div>
+                  <strong>{title}</strong>
+                  <p>{text}</p>
+                </div>
               </div>
             ))}
           </div>
+
           <ul className="tag-list mt-4">
-            {GENRES.map((g) => <li key={g}>{g}</li>)}
+            {GENRES.map((genre) => (
+              <li key={genre}>{genre}</li>
+            ))}
           </ul>
+
           <Link className="text-link" to="/confidentiality">
-            How your manuscript is kept confidential <FiArrowRight />
+            Learn About Our Confidentiality Practices <FiArrowRight />
           </Link>
         </div>
       </section>

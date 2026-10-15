@@ -10,7 +10,7 @@ const NAV = [
   ["/editing", "The Edit"],
   ["/portfolio", "Portfolio"],
   ["/ebook-formatting", "Ebooks"],
-  ["/resources", "Resources"],
+  // ["/resources", "Resources"],
   ["/about", "About"],
   ["/faq", "FAQ"]
 ];
@@ -57,7 +57,7 @@ export default function Layout({ children }) {
               <Link to="/" className="logo">
 <img src={logo} alt="Inkwell Editorial" className="logo-image" />                <span>Inkwell <em>Editorial</em></span>
               </Link>
-              <p className="footer-blurb">{SITE.tagline}. Developmental editing, line editing, copy editing, proofreading and ebook formatting — with your voice kept intact.</p>
+              <p className="footer-blurb">{SITE.tagline}. Developmental editing, line editing, copy editing, proofreading and ebook formatting   with your voice kept intact.</p>
               <a className="footer-mail" href={"mailto:" + SITE.email}><FiMail /> {SITE.email}</a>
             </div>
             <div>
@@ -89,11 +89,7 @@ export default function Layout({ children }) {
               </ul>
             </div>
           </div>
-          <div className="footer-confidential">
-            <FiLock />
-            <p>Your manuscript stays confidential. It's never shared, quoted, or used anywhere without your permission.</p>
-            <Link to="/confidentiality" className="text-link light">Read the policy <FiArrowRight /></Link>
-          </div>
+         
           <div className="footer-note">
             <span>© {new Date().getFullYear()} Inkwell Editorial. All rights reserved.</span>
             <span>Crafted with care for independent authors.</span>

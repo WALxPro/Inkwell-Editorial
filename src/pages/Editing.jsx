@@ -24,7 +24,7 @@ export default function Editing() {
             <h2>Because editing is <em>invisible</em> when it's done well.</h2>
           </div>
           <div>
-            <p>A finished, well-edited book doesn't look edited   it just reads smoothly. That makes it hard for authors to judge what an editor actually does. So instead of describing the work, this page shows it, stage by stage, exactly as you'd see it in your own manuscript.</p>
+            <p>A finished, well edited book doesn't look edited  it just reads smoothly. That makes it hard for authors to judge what an editor actually does. So instead of describing the work, this page shows it, stage by stage, exactly as you'd see it in your own manuscript.</p>
             <p>Each case study focuses on one common problem: wordiness, repetition, weak verbs, dialogue, description, pacing, grammar, continuity and ebook formatting. Read them in order, or jump to the problem you recognise in your own writing.</p>
             <p className="note mt-3"><FiInfo /> To protect client confidentiality, the passages on this page were written for demonstration. Real client work is only ever shown with written permission.</p>
           </div>

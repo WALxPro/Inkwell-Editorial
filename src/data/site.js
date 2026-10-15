@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Inkwell Editorial",
   editor: "Your Name", // TODO: replace with your name
-  email: "hello@inkwelleditorial.com", // TODO: replace with your email
+  email: "inkwelledits.inquiries@gmail.com", // TODO: replace with your email
   tagline: "Manuscript editing & ebook formatting for independent authors"
 };
 
